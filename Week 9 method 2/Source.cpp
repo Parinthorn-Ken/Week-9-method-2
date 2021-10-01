@@ -23,12 +23,24 @@ void countNum(char *c) {
 		*c++;
 	}
 
-
-	printf(" a or A : %d \n", count[0]);
-	printf(" e or E : %d\n", count[1]);
-	printf(" i or I : %d\n", count[2]);
-	printf(" o or O : %d\n", count[3]);
-	printf(" u or U : %d\n", count[4]);
+	if (count[0] != 0) {
+		printf(" a or A : %d \n", count[0]);
+	}
+	if (count[1] != 0) {
+		printf(" e or E : %d \n", count[1]);
+	}
+	if (count[2] != 0) {
+		printf(" i or I : %d \n", count[2]);
+	}
+	if (count[3] != 0) {
+		printf(" o or O : %d \n", count[3]);
+	}
+	if (count[4] != 0) {
+		printf(" u or U : %d \n", count[4]);
+	}
+	if (count[0] == 0 && count[1] == 0 && count[2] == 0 && count[3] == 0 && count[4] == 0) {
+		printf("No vowel\n");
+	}
 	
 }
 
